@@ -1,0 +1,139 @@
+.uploadsContainer {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.note {
+  background-color: #e7f3ff;
+  border: 1px solid #b6d7ff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  color: #0066cc;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table img {
+  max-height: 50px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.roundImage {
+  border-radius: 50% !important;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.imageGroup {
+  max-width: 500px;
+  max-height: 400px;
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.imageGroup img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.imageGroup img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.moreImages {
+  display: inline-block;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.viewButton {
+  background-color: #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.viewButton:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin: 1rem 0;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.info {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.uploadTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.uploadTable th,
+.uploadTable td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+}
+
+.uploadTable img {
+  max-height: 50px;
+  border-radius: 4px;
+}
+
+.loading,
+.empty {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}

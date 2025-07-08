@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="AI App Admin Panel" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>AI App Admin Panel</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    .sidebar {
+      background: linear-gradient(180deg, #1e3a8a, #2a5bff);
+      transition: width 0.3s ease, transform 0.3s ease;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar button {
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      color: #f3f4f6;
+      font-size: 1rem;
+      font-weight: 500;
+      border-left: 4px solid transparent;
+    }
+    .sidebar button:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-left-color: #ffffff;
+      transform: translateX(4px);
+    }
+    .sidebar button.active {
+      background: rgba(255, 255, 255, 0.2);
+      border-left-color: #3b82f6;
+    }
+    .dashboard-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .dashboard-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table tr {
+      transition: background-color 0.2s ease;
+    }
+    table tr:hover {
+      background-color: #f1f5f9;
+    }
+    .notification-form input,
+    .notification-form textarea {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid #d1d5db;
+      transition: all 0.2s ease;
+    }
+    .notification-form input:focus,
+    .notification-form textarea:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+      background: #ffffff;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      border: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #2563eb, #3b82f6);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+    }
+    .status-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 64px;
+        transform: translateX(0);
+      }
+      .sidebar.open {
+        width: 256px;
+      }
+      .sidebar .text {
+        display: none;
+      }
+      .sidebar.open .text {
+        display: inline;
+      }
+      .content {
+        margin-left: 64px;
+      }
+      .sidebar.open + .content {
+        margin-left: 256px;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html>
